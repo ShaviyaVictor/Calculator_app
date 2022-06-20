@@ -21,6 +21,12 @@ public class Calculator implements ActionListener {
 
     Calculator() {
 
+        frame = new JFrame("Calculator");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(420, 550);
+        frame.setLayout(null);
+
+        frame.setVisible(true);
     }
     public static void main(String[] args) {
         // System.out.println("Hello world!");
