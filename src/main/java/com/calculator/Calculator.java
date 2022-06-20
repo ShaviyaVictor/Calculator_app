@@ -23,8 +23,16 @@ public class Calculator implements ActionListener {
 
         frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(420, 550);
+        frame.setSize(450, 600);
         frame.setLayout(null);
+
+        // textField to hold all the number that we type in and the results
+        textField = new JTextField();
+        textField.setBounds(50, 25, 300, 50);
+        textField.setFont(myFont);
+        textField.setEditable(false);
+
+        frame.add(textField);
 
         frame.setVisible(true);
     }
