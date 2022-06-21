@@ -52,6 +52,12 @@ public class Calculator implements ActionListener {
         functionButtons[6] = delButton;
         functionButtons[7] = clearButton;
 
+        // add a for loop action listener
+        for (int i = 0; i < 8; i++) {
+            functionButtons[i].addActionListener(this);
+            functionButtons[i].setFont(myFont);
+            functionButtons[i].setFocusable(false);
+        }
 
         frame.add(textField);
         frame.setVisible(true);
