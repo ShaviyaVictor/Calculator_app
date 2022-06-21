@@ -32,6 +32,7 @@ public class Calculator implements ActionListener {
         textField.setFont(myFont);
         textField.setEditable(false);
 
+        // the function buttons
         addButton = new JButton("+");
         subButton = new JButton("-");
         multiplyButton = new JButton("*");
@@ -40,6 +41,17 @@ public class Calculator implements ActionListener {
         equButton = new JButton("=");
         delButton = new JButton("Delete");
         clearButton = new JButton("Clear");
+
+        // add the function buttons to our initial created array
+        functionButtons[0] = addButton;
+        functionButtons[1] = subButton;
+        functionButtons[2] = multiplyButton;
+        functionButtons[3] = divButton;
+        functionButtons[4] = decimalButton;
+        functionButtons[5] = equButton;
+        functionButtons[6] = delButton;
+        functionButtons[7] = clearButton;
+
 
         frame.add(textField);
         frame.setVisible(true);
